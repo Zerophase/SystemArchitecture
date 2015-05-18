@@ -1,0 +1,13 @@
+//
+// Created by zerophase on 5/17/15.
+//
+
+#ifndef SYSTEMARCHITECTURE_MEMORYCONFIG_H
+#define SYSTEMARCHITECTURE_MEMORYCONFIG_H
+
+namespace Allocators
+{
+	#define MAX_HEAP 8000000000
+}
+
+#endif //SYSTEMARCHITECTURE_MEMORYCONFIG_H
