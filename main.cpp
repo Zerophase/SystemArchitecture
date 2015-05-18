@@ -24,7 +24,7 @@ int main()
 	{
 		array[i] = (char*)freeListAllocator.Malloc(sizeof(char));
 	}
-
+	pid_t pid;
 	for(int i =0; i < arraySize; i+=5)
 	{
 		std::string s;
@@ -37,7 +37,7 @@ int main()
 		fs << "Lorem ipsum";
 		fs.close();
 
-		pid_t pid = fork();
+		pid = fork();
 		if(pid == 0)
 		{
 			std::string file = path + *(array + i *sizeof(char));
